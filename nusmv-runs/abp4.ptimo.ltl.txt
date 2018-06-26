@@ -1,0 +1,633 @@
+convert.bash v0.1
+*** This is NuSMV 2.2.2 zchaff (compiled on Tue Oct 12 09:35:31 UTC 2004)
+*** For more information of NuSMV see <http://nusmv.irst.itc.it>
+*** or email to <nusmv-users@irst.itc.it>.
+*** Please report bugs to <nusmv@irst.itc.it>.
+
+WARNING *** This version of NuSMV is linked to the zchaff SAT solver  ***
+WARNING *** (see http://www.ee.princeton.edu/~chaff/).                ***
+WARNING *** Zchaff is used in Bounded Model Checking when the         ***
+WARNING *** environment variable sat_solver is set to "zchaff".       ***
+WARNING *** Notice that zchaff is for non-commercial purposes only.   ***
+WARNING *** NO COMMERCIAL USE OF ZCHAFF IS ALLOWED WITHOUT WRITTEN    ***
+WARNING *** PERMISSION FROM PRINCETON UNIVERSITY.                     ***
+WARNING *** Please contact Sharad Malik (malik@ee.princeton.edu)      ***
+WARNING *** for details.                                              ***
+
+Starting the batch interaction.
+Parsing file abp4.ptimo.ltl.smv ......done.
+Flattening hierarchy ......done.
+Encoding variables ...... done.
+Building Model ...checking for multiple assignments...
+Done
+checking for circular assignments...
+Done
+checking for multiple assignments in process s2r...
+Done
+checking for circular assignments in process s2r...
+Done
+checking for multiple assignments in process r2s...
+Done
+checking for circular assignments in process r2s...
+Done
+checking for multiple assignments in process receiver...
+Done
+checking for circular assignments in process receiver...
+Done
+checking for multiple assignments in process sender...
+Done
+checking for circular assignments in process sender...
+Done
+... done.
+... done.
+Setting reachable states on......done
+evaluating LTL specification  G (sender.state = wait_for_ack ->  Y  H sender.state != wait_for_ack)
+Computing the corresponding tableau........ done
+Parsing the generated tableau........done
+Flattening the generated tableau........ done
+Creating LTL tableau variables...
+
+computing reachable state space
+  iteration 0: BDD size = 18, frontier size = 18, states = 65536
+  forward step done, size = 31
+  new frontier computed, size = 18
+  iteration 1: BDD size = 31, frontier size = 18, states = 262144
+  forward step done, size = 109
+  new frontier computed, size = 93
+  iteration 2: BDD size = 109, frontier size = 93, states = 266240
+  forward step done, size = 254
+  new frontier computed, size = 218
+  iteration 3: BDD size = 254, frontier size = 218, states = 275456
+  forward step done, size = 397
+  new frontier computed, size = 281
+  iteration 4: BDD size = 397, frontier size = 281, states = 276032
+  forward step done, size = 431
+  new frontier computed, size = 298
+  iteration 5: BDD size = 431, frontier size = 298, states = 276576
+  forward step done, size = 478
+  new frontier computed, size = 298
+  iteration 6: BDD size = 478, frontier size = 298, states = 277632
+  forward step done, size = 651
+  new frontier computed, size = 475
+  iteration 7: BDD size = 651, frontier size = 475, states = 278720
+  forward step done, size = 894
+  new frontier computed, size = 313
+  iteration 8: BDD size = 894, frontier size = 313, states = 279296
+  forward step done, size = 1022
+  new frontier computed, size = 313
+  iteration 9: BDD size = 1022, frontier size = 313, states = 280352
+  forward step done, size = 1179
+  new frontier computed, size = 373
+  iteration 10: BDD size = 1179, frontier size = 373, states = 280928
+  forward step done, size = 1292
+  new frontier computed, size = 170
+  iteration 11: BDD size = 1292, frontier size = 170, states = 281952
+  forward step done, size = 1405
+  new frontier computed, size = 281
+  iteration 12: BDD size = 1405, frontier size = 281, states = 282528
+  forward step done, size = 1438
+  new frontier computed, size = 297
+  iteration 13: BDD size = 1438, frontier size = 297, states = 283072
+  forward step done, size = 1484
+  new frontier computed, size = 298
+  iteration 14: BDD size = 1484, frontier size = 298, states = 284128
+  forward step done, size = 1625
+  new frontier computed, size = 584
+  iteration 15: BDD size = 1625, frontier size = 584, states = 285152
+  forward step done, size = 2040
+  new frontier computed, size = 597
+  iteration 16: BDD size = 2040, frontier size = 597, states = 286208
+  forward step done, size = 2226
+  new frontier computed, size = 405
+  iteration 17: BDD size = 2226, frontier size = 405, states = 287200
+  forward step done, size = 2193
+  new frontier computed, size = 279
+  iteration 18: BDD size = 2193, frontier size = 279, states = 287264
+  forward step done, size = 2193
+  new frontier computed, size = 1
+done
+Computing the set of fair <state>x<input> pairs
+  size of res0 = 6.87195e+10 <states>x<input>, 1 BDD nodes
+    size of Y0 = 147712 <states>x<inputs>, 2144 BDD nodes
+    size of Y1 = 182528 <states>x<inputs>, 2741 BDD nodes
+    size of Y2 = 328448 <states>x<inputs>, 2642 BDD nodes
+    size of Y3 = 1.38061e+06 <states>x<inputs>, 2344 BDD nodes
+    size of Y4 = 2.29811e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 8704 <states>x<inputs>, 550 BDD nodes
+    size of Y1 = 26144 <states>x<inputs>, 1173 BDD nodes
+    size of Y2 = 211584 <states>x<inputs>, 1815 BDD nodes
+    size of Y3 = 1.27606e+06 <states>x<inputs>, 2574 BDD nodes
+    size of Y4 = 2.20566e+06 <states>x<inputs>, 3453 BDD nodes
+    size of Y5 = 2.21024e+06 <states>x<inputs>, 2824 BDD nodes
+    size of Y6 = 2.21472e+06 <states>x<inputs>, 2936 BDD nodes
+    size of Y7 = 2.21837e+06 <states>x<inputs>, 2469 BDD nodes
+    size of Y0 = 574528 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.24944e+06 <states>x<inputs>, 4747 BDD nodes
+    size of Y0 = 8704 <states>x<inputs>, 584 BDD nodes
+    size of Y1 = 9792 <states>x<inputs>, 1168 BDD nodes
+    size of Y2 = 14144 <states>x<inputs>, 1136 BDD nodes
+    size of Y3 = 18688 <states>x<inputs>, 1552 BDD nodes
+    size of Y4 = 40992 <states>x<inputs>, 1864 BDD nodes
+    size of Y5 = 229504 <states>x<inputs>, 1993 BDD nodes
+    size of Y6 = 1.29347e+06 <states>x<inputs>, 2781 BDD nodes
+    size of Y7 = 2.21837e+06 <states>x<inputs>, 2198 BDD nodes
+    size of Y0 = 574528 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.24944e+06 <states>x<inputs>, 4746 BDD nodes
+    size of Y0 = 574528 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.24944e+06 <states>x<inputs>, 4747 BDD nodes
+    size of Y0 = 287264 <states>x<inputs>, 2196 BDD nodes
+    size of Y1 = 2.24245e+06 <states>x<inputs>, 3521 BDD nodes
+  size of res1 = 2.21402e+06 <states>x<input>, 2193 BDD nodes
+    size of Y0 = 63616 <states>x<inputs>, 1274 BDD nodes
+    size of Y1 = 98432 <states>x<inputs>, 1871 BDD nodes
+    size of Y2 = 244352 <states>x<inputs>, 2283 BDD nodes
+    size of Y3 = 1.29651e+06 <states>x<inputs>, 2344 BDD nodes
+    size of Y4 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 4352 <states>x<inputs>, 551 BDD nodes
+    size of Y1 = 21792 <states>x<inputs>, 1089 BDD nodes
+    size of Y2 = 207232 <states>x<inputs>, 1667 BDD nodes
+    size of Y3 = 1.27171e+06 <states>x<inputs>, 2426 BDD nodes
+    size of Y4 = 2.20131e+06 <states>x<inputs>, 3305 BDD nodes
+    size of Y5 = 2.20589e+06 <states>x<inputs>, 2660 BDD nodes
+    size of Y6 = 2.21037e+06 <states>x<inputs>, 2660 BDD nodes
+    size of Y7 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 553504 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 4352 <states>x<inputs>, 585 BDD nodes
+    size of Y1 = 5440 <states>x<inputs>, 1165 BDD nodes
+    size of Y2 = 9792 <states>x<inputs>, 1133 BDD nodes
+    size of Y3 = 14336 <states>x<inputs>, 1549 BDD nodes
+    size of Y4 = 36640 <states>x<inputs>, 1861 BDD nodes
+    size of Y5 = 225152 <states>x<inputs>, 1990 BDD nodes
+    size of Y6 = 1.28912e+06 <states>x<inputs>, 2775 BDD nodes
+    size of Y7 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 553504 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 553504 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 276752 <states>x<inputs>, 2196 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+done
+  size of res0 = 6.87195e+10 <states>x<input>, 1 BDD nodes
+    size of Y0 = 147712 <states>x<inputs>, 2144 BDD nodes
+    size of Y1 = 182528 <states>x<inputs>, 2741 BDD nodes
+    size of Y2 = 328448 <states>x<inputs>, 2642 BDD nodes
+    size of Y3 = 1.38061e+06 <states>x<inputs>, 2344 BDD nodes
+    size of Y4 = 2.29811e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 8704 <states>x<inputs>, 550 BDD nodes
+    size of Y1 = 26144 <states>x<inputs>, 1173 BDD nodes
+    size of Y2 = 211584 <states>x<inputs>, 1815 BDD nodes
+    size of Y3 = 1.27606e+06 <states>x<inputs>, 2574 BDD nodes
+    size of Y4 = 2.20566e+06 <states>x<inputs>, 3453 BDD nodes
+    size of Y5 = 2.21024e+06 <states>x<inputs>, 2824 BDD nodes
+    size of Y6 = 2.21472e+06 <states>x<inputs>, 2936 BDD nodes
+    size of Y7 = 2.21837e+06 <states>x<inputs>, 2469 BDD nodes
+    size of Y0 = 574528 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.23504e+06 <states>x<inputs>, 4369 BDD nodes
+    size of Y0 = 8704 <states>x<inputs>, 584 BDD nodes
+    size of Y1 = 9792 <states>x<inputs>, 1168 BDD nodes
+    size of Y2 = 14144 <states>x<inputs>, 1136 BDD nodes
+    size of Y3 = 18688 <states>x<inputs>, 1552 BDD nodes
+    size of Y4 = 40992 <states>x<inputs>, 1864 BDD nodes
+    size of Y5 = 229504 <states>x<inputs>, 1993 BDD nodes
+    size of Y6 = 1.29347e+06 <states>x<inputs>, 2781 BDD nodes
+    size of Y7 = 2.21837e+06 <states>x<inputs>, 2198 BDD nodes
+    size of Y0 = 574528 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.23504e+06 <states>x<inputs>, 4369 BDD nodes
+    size of Y0 = 574528 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.23504e+06 <states>x<inputs>, 4369 BDD nodes
+    size of Y0 = 287264 <states>x<inputs>, 2196 BDD nodes
+    size of Y1 = 2.22453e+06 <states>x<inputs>, 4370 BDD nodes
+  size of res1 = 2.21402e+06 <states>x<input>, 2193 BDD nodes
+    size of Y0 = 63616 <states>x<inputs>, 1274 BDD nodes
+    size of Y1 = 98432 <states>x<inputs>, 1871 BDD nodes
+    size of Y2 = 244352 <states>x<inputs>, 2283 BDD nodes
+    size of Y3 = 1.29651e+06 <states>x<inputs>, 2344 BDD nodes
+    size of Y4 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 4352 <states>x<inputs>, 551 BDD nodes
+    size of Y1 = 21792 <states>x<inputs>, 1089 BDD nodes
+    size of Y2 = 207232 <states>x<inputs>, 1667 BDD nodes
+    size of Y3 = 1.27171e+06 <states>x<inputs>, 2426 BDD nodes
+    size of Y4 = 2.20131e+06 <states>x<inputs>, 3305 BDD nodes
+    size of Y5 = 2.20589e+06 <states>x<inputs>, 2660 BDD nodes
+    size of Y6 = 2.21037e+06 <states>x<inputs>, 2660 BDD nodes
+    size of Y7 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 553504 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 4352 <states>x<inputs>, 585 BDD nodes
+    size of Y1 = 5440 <states>x<inputs>, 1165 BDD nodes
+    size of Y2 = 9792 <states>x<inputs>, 1133 BDD nodes
+    size of Y3 = 14336 <states>x<inputs>, 1549 BDD nodes
+    size of Y4 = 36640 <states>x<inputs>, 1861 BDD nodes
+    size of Y5 = 225152 <states>x<inputs>, 1990 BDD nodes
+    size of Y6 = 1.28912e+06 <states>x<inputs>, 2775 BDD nodes
+    size of Y7 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 553504 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 553504 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 276752 <states>x<inputs>, 2196 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+-- specification  G (sender.state = wait_for_ack ->  Y  H sender.state != wait_for_ack) is false
+  size of res0 = 6.87195e+10 <states>x<input>, 1 BDD nodes
+    size of Y0 = 147712 <states>x<inputs>, 2144 BDD nodes
+    size of Y1 = 182528 <states>x<inputs>, 2741 BDD nodes
+    size of Y2 = 328448 <states>x<inputs>, 2642 BDD nodes
+    size of Y3 = 1.38061e+06 <states>x<inputs>, 2344 BDD nodes
+    size of Y4 = 2.29811e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 8704 <states>x<inputs>, 550 BDD nodes
+    size of Y1 = 26144 <states>x<inputs>, 1173 BDD nodes
+    size of Y2 = 211584 <states>x<inputs>, 1815 BDD nodes
+    size of Y3 = 1.27606e+06 <states>x<inputs>, 2574 BDD nodes
+    size of Y4 = 2.20566e+06 <states>x<inputs>, 3453 BDD nodes
+    size of Y5 = 2.21024e+06 <states>x<inputs>, 2824 BDD nodes
+    size of Y6 = 2.21472e+06 <states>x<inputs>, 2936 BDD nodes
+    size of Y7 = 2.21837e+06 <states>x<inputs>, 2469 BDD nodes
+    size of Y0 = 574528 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.24944e+06 <states>x<inputs>, 4747 BDD nodes
+    size of Y0 = 8704 <states>x<inputs>, 584 BDD nodes
+    size of Y1 = 9792 <states>x<inputs>, 1168 BDD nodes
+    size of Y2 = 14144 <states>x<inputs>, 1136 BDD nodes
+    size of Y3 = 18688 <states>x<inputs>, 1552 BDD nodes
+    size of Y4 = 40992 <states>x<inputs>, 1864 BDD nodes
+    size of Y5 = 229504 <states>x<inputs>, 1993 BDD nodes
+    size of Y6 = 1.29347e+06 <states>x<inputs>, 2781 BDD nodes
+    size of Y7 = 2.21837e+06 <states>x<inputs>, 2198 BDD nodes
+    size of Y0 = 574528 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.24944e+06 <states>x<inputs>, 4746 BDD nodes
+    size of Y0 = 574528 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.24944e+06 <states>x<inputs>, 4747 BDD nodes
+    size of Y0 = 287264 <states>x<inputs>, 2196 BDD nodes
+    size of Y1 = 2.24245e+06 <states>x<inputs>, 3521 BDD nodes
+  size of res1 = 2.21402e+06 <states>x<input>, 2193 BDD nodes
+    size of Y0 = 63616 <states>x<inputs>, 1274 BDD nodes
+    size of Y1 = 98432 <states>x<inputs>, 1871 BDD nodes
+    size of Y2 = 244352 <states>x<inputs>, 2283 BDD nodes
+    size of Y3 = 1.29651e+06 <states>x<inputs>, 2344 BDD nodes
+    size of Y4 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 4352 <states>x<inputs>, 551 BDD nodes
+    size of Y1 = 21792 <states>x<inputs>, 1089 BDD nodes
+    size of Y2 = 207232 <states>x<inputs>, 1667 BDD nodes
+    size of Y3 = 1.27171e+06 <states>x<inputs>, 2426 BDD nodes
+    size of Y4 = 2.20131e+06 <states>x<inputs>, 3305 BDD nodes
+    size of Y5 = 2.20589e+06 <states>x<inputs>, 2660 BDD nodes
+    size of Y6 = 2.21037e+06 <states>x<inputs>, 2660 BDD nodes
+    size of Y7 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 553504 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 4352 <states>x<inputs>, 585 BDD nodes
+    size of Y1 = 5440 <states>x<inputs>, 1165 BDD nodes
+    size of Y2 = 9792 <states>x<inputs>, 1133 BDD nodes
+    size of Y3 = 14336 <states>x<inputs>, 1549 BDD nodes
+    size of Y4 = 36640 <states>x<inputs>, 1861 BDD nodes
+    size of Y5 = 225152 <states>x<inputs>, 1990 BDD nodes
+    size of Y6 = 1.28912e+06 <states>x<inputs>, 2775 BDD nodes
+    size of Y7 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 553504 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 553504 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 276752 <states>x<inputs>, 2196 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+  size of res0 = 6.87195e+10 <states>x<input>, 1 BDD nodes
+    size of Y0 = 147712 <states>x<inputs>, 2144 BDD nodes
+    size of Y1 = 182528 <states>x<inputs>, 2741 BDD nodes
+    size of Y2 = 328448 <states>x<inputs>, 2642 BDD nodes
+    size of Y3 = 1.38061e+06 <states>x<inputs>, 2344 BDD nodes
+    size of Y4 = 2.29811e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 8704 <states>x<inputs>, 550 BDD nodes
+    size of Y1 = 26144 <states>x<inputs>, 1173 BDD nodes
+    size of Y2 = 211584 <states>x<inputs>, 1815 BDD nodes
+    size of Y3 = 1.27606e+06 <states>x<inputs>, 2574 BDD nodes
+    size of Y4 = 2.20566e+06 <states>x<inputs>, 3453 BDD nodes
+    size of Y5 = 2.21024e+06 <states>x<inputs>, 2824 BDD nodes
+    size of Y6 = 2.21472e+06 <states>x<inputs>, 2936 BDD nodes
+    size of Y7 = 2.21837e+06 <states>x<inputs>, 2469 BDD nodes
+    size of Y0 = 574528 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.23504e+06 <states>x<inputs>, 4369 BDD nodes
+    size of Y0 = 8704 <states>x<inputs>, 584 BDD nodes
+    size of Y1 = 9792 <states>x<inputs>, 1168 BDD nodes
+    size of Y2 = 14144 <states>x<inputs>, 1136 BDD nodes
+    size of Y3 = 18688 <states>x<inputs>, 1552 BDD nodes
+    size of Y4 = 40992 <states>x<inputs>, 1864 BDD nodes
+    size of Y5 = 229504 <states>x<inputs>, 1993 BDD nodes
+    size of Y6 = 1.29347e+06 <states>x<inputs>, 2781 BDD nodes
+    size of Y7 = 2.21837e+06 <states>x<inputs>, 2198 BDD nodes
+    size of Y0 = 574528 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.23504e+06 <states>x<inputs>, 4369 BDD nodes
+    size of Y0 = 574528 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.23504e+06 <states>x<inputs>, 4369 BDD nodes
+    size of Y0 = 287264 <states>x<inputs>, 2196 BDD nodes
+    size of Y1 = 2.22453e+06 <states>x<inputs>, 4370 BDD nodes
+  size of res1 = 2.21402e+06 <states>x<input>, 2193 BDD nodes
+    size of Y0 = 63616 <states>x<inputs>, 1274 BDD nodes
+    size of Y1 = 98432 <states>x<inputs>, 1871 BDD nodes
+    size of Y2 = 244352 <states>x<inputs>, 2283 BDD nodes
+    size of Y3 = 1.29651e+06 <states>x<inputs>, 2344 BDD nodes
+    size of Y4 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 4352 <states>x<inputs>, 551 BDD nodes
+    size of Y1 = 21792 <states>x<inputs>, 1089 BDD nodes
+    size of Y2 = 207232 <states>x<inputs>, 1667 BDD nodes
+    size of Y3 = 1.27171e+06 <states>x<inputs>, 2426 BDD nodes
+    size of Y4 = 2.20131e+06 <states>x<inputs>, 3305 BDD nodes
+    size of Y5 = 2.20589e+06 <states>x<inputs>, 2660 BDD nodes
+    size of Y6 = 2.21037e+06 <states>x<inputs>, 2660 BDD nodes
+    size of Y7 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 553504 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 4352 <states>x<inputs>, 585 BDD nodes
+    size of Y1 = 5440 <states>x<inputs>, 1165 BDD nodes
+    size of Y2 = 9792 <states>x<inputs>, 1133 BDD nodes
+    size of Y3 = 14336 <states>x<inputs>, 1549 BDD nodes
+    size of Y4 = 36640 <states>x<inputs>, 1861 BDD nodes
+    size of Y5 = 225152 <states>x<inputs>, 1990 BDD nodes
+    size of Y6 = 1.28912e+06 <states>x<inputs>, 2775 BDD nodes
+    size of Y7 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 553504 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 553504 <states>x<inputs>, 2195 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+    size of Y0 = 276752 <states>x<inputs>, 2196 BDD nodes
+    size of Y1 = 2.21402e+06 <states>x<inputs>, 2193 BDD nodes
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+eu_explain: iteration 1: states = 4, BDD nodes = 63
+eu_explain: iteration 2: states = 5, BDD nodes = 69
+eu_explain: iteration 3: states = 11, BDD nodes = 115
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+eu_explain: iteration 1: states = 4, BDD nodes = 40
+eu_explain: iteration 2: states = 5, BDD nodes = 59
+eu_explain: iteration 3: states = 8, BDD nodes = 53
+eu_explain: iteration 4: states = 9, BDD nodes = 64
+eu_explain: iteration 5: states = 9, BDD nodes = 86
+eu_explain: iteration 6: states = 12, BDD nodes = 85
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+eu_explain: iteration 1: states = 6, BDD nodes = 39
+eu_explain: iteration 2: states = 7, BDD nodes = 53
+eu_explain: iteration 3: states = 7, BDD nodes = 58
+eu_explain: iteration 4: states = 10, BDD nodes = 55
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+eu_explain: iteration 1: states = 3, BDD nodes = 34
+eu_explain: iteration 2: states = 5, BDD nodes = 64
+eu_explain: iteration 3: states = 9, BDD nodes = 69
+eu_explain: iteration 4: states = 14, BDD nodes = 71
+eu_explain: iteration 5: states = 16, BDD nodes = 71
+eu_explain: iteration 6: states = 19, BDD nodes = 79
+eu_explain: iteration 7: states = 21, BDD nodes = 73
+eu_explain: iteration 8: states = 36, BDD nodes = 105
+eu_explain: iteration 9: states = 68, BDD nodes = 126
+eu_explain: iteration 10: states = 104, BDD nodes = 212
+eu_explain: iteration 11: states = 168, BDD nodes = 328
+eu_explain: iteration 12: states = 245, BDD nodes = 452
+eu_explain: iteration 13: states = 277, BDD nodes = 483
+eu_explain: iteration 14: states = 325, BDD nodes = 556
+eu_explain: iteration 15: states = 387, BDD nodes = 661
+eu_explain: iteration 16: states = 656, BDD nodes = 998
+eu_explain: iteration 17: states = 1196, BDD nodes = 1103
+eu_explain: iteration 18: states = 1725, BDD nodes = 1242
+eu_explain: iteration 19: states = 2745, BDD nodes = 1354
+eu_explain: iteration 20: states = 3014, BDD nodes = 1316
+eu_explain: iteration 21: states = 3042, BDD nodes = 1351
+eu_explain: iteration 22: states = 3807, BDD nodes = 1378
+eu_explain: iteration 23: states = 4077, BDD nodes = 1481
+eu_explain: iteration 24: states = 4302, BDD nodes = 1896
+eu_explain: iteration 25: states = 5262, BDD nodes = 2125
+eu_explain: iteration 26: states = 5082, BDD nodes = 2213
+eu_explain: iteration 27: states = 6042, BDD nodes = 2238
+eu_explain: iteration 28: states = 6269, BDD nodes = 2020
+eu_explain: iteration 29: states = 6237, BDD nodes = 1996
+eu_explain: iteration 30: states = 6957, BDD nodes = 1975
+eu_explain: iteration 31: states = 7167, BDD nodes = 1909
+eu_explain: iteration 32: states = 7137, BDD nodes = 1922
+eu_explain: iteration 33: states = 7587, BDD nodes = 1986
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+eu_explain: iteration 1: states = 4, BDD nodes = 64
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+eu_explain: iteration 1: states = 6, BDD nodes = 38
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+eu_explain: iteration 1: states = 6, BDD nodes = 38
+eu_explain: iteration 2: states = 7, BDD nodes = 52
+eu_explain: iteration 3: states = 7, BDD nodes = 58
+eu_explain: iteration 4: states = 10, BDD nodes = 53
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+searching (counter)example for EG TRUE
+eu_explain: iteration 0: states = 1, BDD nodes = 34
+eu_explain: iteration 1: states = 3, BDD nodes = 34
+eu_explain: iteration 2: states = 5, BDD nodes = 64
+eu_explain: iteration 3: states = 9, BDD nodes = 70
+eu_explain: iteration 4: states = 14, BDD nodes = 70
+eu_explain: iteration 5: states = 16, BDD nodes = 71
+eu_explain: iteration 6: states = 19, BDD nodes = 77
+eu_explain: iteration 7: states = 21, BDD nodes = 73
+eu_explain: iteration 8: states = 36, BDD nodes = 104
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample
+Trace Type: Counterexample
+-> State: 1.1 <-
+  sender.state = get
+  sender.abp = 0
+  sender.data = 0
+  s2r_in.tag = mt
+  s2r_in.data = 0
+  s2r_out.tag = mt
+  s2r_out.data = 0
+  receiver.state = receive
+  receiver.abp = 0
+  receiver.data = 0
+  r2s_in.tag = mt
+  r2s_out.tag = mt
+-> Input: 1.2 <-
+  _process_selector_ = sender
+-> State: 1.2 <-
+  sender.state = send
+-> Input: 1.3 <-
+  _process_selector_ = sender
+-> State: 1.3 <-
+  sender.state = wait_for_ack
+  s2r_in.tag = data0
+-> Input: 1.4 <-
+  _process_selector_ = s2r
+-> State: 1.4 <-
+  s2r_in.tag = mt
+  s2r_out.tag = error
+-> Input: 1.5 <-
+  _process_selector_ = receiver
+-> State: 1.5 <-
+  s2r_out.tag = mt
+  receiver.state = send_ack
+-> Input: 1.6 <-
+  _process_selector_ = receiver
+-> State: 1.6 <-
+  receiver.state = receive
+  r2s_in.tag = ack1
+-> Input: 1.7 <-
+  _process_selector_ = r2s
+-> State: 1.7 <-
+  r2s_in.tag = mt
+  r2s_out.tag = error
+-> Input: 1.8 <-
+  _process_selector_ = sender
+-> State: 1.8 <-
+  sender.state = send
+  r2s_out.tag = mt
+-> Input: 1.9 <-
+  _process_selector_ = sender
+-> State: 1.9 <-
+  sender.state = wait_for_ack
+  s2r_in.tag = data0
+-> Input: 1.10 <-
+  _process_selector_ = s2r
+-> State: 1.10 <-
+  s2r_in.tag = mt
+  s2r_out.tag = data0
+-> Input: 1.11 <-
+  _process_selector_ = s2r
+-> State: 1.11 <-
+-> Input: 1.12 <-
+  _process_selector_ = receiver
+-> State: 1.12 <-
+  s2r_out.tag = mt
+  receiver.state = deliver
+-> Input: 1.13 <-
+  _process_selector_ = receiver
+-> State: 1.13 <-
+  receiver.state = send_ack
+  receiver.abp = 1
+-> Input: 1.14 <-
+  _process_selector_ = receiver
+-> State: 1.14 <-
+  receiver.state = receive
+  r2s_in.tag = ack0
+-> Input: 1.15 <-
+  _process_selector_ = r2s
+-> State: 1.15 <-
+  r2s_in.tag = mt
+  r2s_out.tag = ack0
+-> Input: 1.16 <-
+  _process_selector_ = r2s
+-> State: 1.16 <-
+-> Input: 1.17 <-
+  _process_selector_ = receiver
+-> State: 1.17 <-
+-> Input: 1.18 <-
+  _process_selector_ = sender
+-> State: 1.18 <-
+  sender.state = get
+  sender.abp = 1
+  r2s_out.tag = mt
+-- Loop starts here
+-> Input: 1.19 <-
+  _process_selector_ = sender
+-> State: 1.19 <-
+  sender.state = send
+-> Input: 1.20 <-
+  _process_selector_ = sender
+-> State: 1.20 <-
+  sender.state = wait_for_ack
+  s2r_in.tag = data1
+-> Input: 1.21 <-
+  _process_selector_ = s2r
+-> State: 1.21 <-
+  s2r_in.tag = mt
+  s2r_out.tag = data1
+-> Input: 1.22 <-
+  _process_selector_ = s2r
+-> State: 1.22 <-
+-> Input: 1.23 <-
+  _process_selector_ = receiver
+-> State: 1.23 <-
+  s2r_out.tag = mt
+  receiver.state = deliver
+-> Input: 1.24 <-
+  _process_selector_ = receiver
+-> State: 1.24 <-
+  receiver.state = send_ack
+  receiver.abp = 0
+-> Input: 1.25 <-
+  _process_selector_ = receiver
+-> State: 1.25 <-
+  receiver.state = receive
+  r2s_in.tag = ack1
+-> Input: 1.26 <-
+  _process_selector_ = r2s
+-> State: 1.26 <-
+  r2s_in.tag = mt
+  r2s_out.tag = ack1
+-> Input: 1.27 <-
+  _process_selector_ = r2s
+-> State: 1.27 <-
+-> Input: 1.28 <-
+  _process_selector_ = receiver
+-> State: 1.28 <-
+-> Input: 1.29 <-
+  _process_selector_ = sender
+-> State: 1.29 <-
+  sender.state = get
+  sender.abp = 0
+  r2s_out.tag = mt
+-> Input: 1.30 <-
+  _process_selector_ = sender
+-> State: 1.30 <-
+  sender.state = send
+-> Input: 1.31 <-
+  _process_selector_ = sender
+-> State: 1.31 <-
+  sender.state = wait_for_ack
+  s2r_in.tag = data0
+-> Input: 1.32 <-
+  _process_selector_ = s2r
+-> State: 1.32 <-
+  s2r_in.tag = mt
+  s2r_out.tag = data0
+-> Input: 1.33 <-
+  _process_selector_ = receiver
+-> State: 1.33 <-
+  s2r_out.tag = mt
+  receiver.state = deliver
+-> Input: 1.34 <-
+  _process_selector_ = receiver
+-> State: 1.34 <-
+  receiver.state = send_ack
+  receiver.abp = 1
+-> Input: 1.35 <-
+  _process_selector_ = receiver
+-> State: 1.35 <-
+  receiver.state = receive
+  r2s_in.tag = ack0
+-> Input: 1.36 <-
+  _process_selector_ = r2s
+-> State: 1.36 <-
+  r2s_in.tag = mt
+  r2s_out.tag = ack0
+-> Input: 1.37 <-
+  _process_selector_ = sender
+-> State: 1.37 <-
+  sender.state = get
+  sender.abp = 1
+  r2s_out.tag = mt
+-> Input: 1.38 <-
+  _process_selector_ = sender
+-> State: 1.38 <-
+  sender.state = send
+######################################################################
